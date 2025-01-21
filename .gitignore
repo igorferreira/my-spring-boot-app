@@ -1,0 +1,30 @@
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+**/mvnw
+**/mvnw.cmd
+**/.mvn/wrapper/maven-wrapper.properties
+**/.mvn/wrapper/maven-wrapper.jar
+**/.mvn/wrapper/MavenWrapperDownloader.java
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+/out/
+
+# VS Code
+/.vscode/
+
+# Logs
+/logs
+*.log
+
+# Spring Boot
+/spring.log
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
