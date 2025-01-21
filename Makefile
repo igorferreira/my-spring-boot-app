@@ -1,4 +1,4 @@
-.PHONY: build run test clean run-once call help
+.PHONY: build run test clean run-once call help gradle-build
 
 help: ## Show this help message
 	@echo 'Usage: make [target]'
@@ -31,3 +31,7 @@ run-once: ## Run the application and then exit
 
 call: ## Call the /hello endpoint
 	@curl -s http://localhost:8080/hello
+
+# Compile using Gradle
+gradle-build: ## Build the project using Gradle
+	./gradlew build

@@ -71,6 +71,36 @@ make run-once
 
 This command will start the application, wait for 10 seconds to ensure the server is running, make a request to the `/hello` endpoint, and then stop the application.
 
+## Build Tools Setup
+
+### Maven Wrapper Installation
+To install Maven Wrapper, run:
+```bash
+mvn wrapper:wrapper
+```
+This will create:
+- mvnw (Unix)
+- mvnw.cmd (Windows)
+- .mvn directory
+
+### Gradle Wrapper Installation
+To install Gradle Wrapper, run:
+```bash
+gradle wrapper
+```
+Or if Gradle is not installed:
+```bash
+gradle wrapper --gradle-version 8.12
+```
+This will create:
+- gradlew (Unix)
+- gradlew.bat (Windows)
+- gradle/wrapper directory
+
+### Using the Wrappers
+- Maven: Use `./mvnw` instead of `mvn`
+- Gradle: Use `./gradlew` instead of `gradle`
+
 ## Endpoints
 
 - `GET /hello`: Returns a simple greeting message.
